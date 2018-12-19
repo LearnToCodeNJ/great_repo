@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 from sklearn.datasets import make_regression
 from sklearn.linear_model import Lasso
+import os
 
 app = Flask(__name__)
 
@@ -13,6 +14,7 @@ def hello_world():
 
 @app.route('/get_stock')
 def get_stock():
+    quandl.ApiConfig.api_key = os.getenv('QUANDLE_API_KEY')
     test = quandl.get('NASDAQOMX/XQC', start_date='2018-12-17', end_date='2018-12-17')
     return test.to_json()
 
