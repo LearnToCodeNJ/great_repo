@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/Alexius/.local/share/virtualenvs/portfolio-generator-sM7jPIBU/bin/python"
+    "python.pythonPath": "/Users/Alexius/projects/portfolio-generator/portfolio-generator/bin/python",
+    "python.autoComplete.addBrackets": true
 }
